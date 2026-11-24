@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Projektowanie i zakładanie ogrodów - Flortech, Wola Rzędzińska</title>
+<meta name="description" content="Flortech Zakład Kształtowania Krajobrazu: projekt ogrodu, prace ziemne, instalacje, tarasy, oczka wodne, zieleń i pielęgnacja. Małopolska, Podkarpacie, Śląsk.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/figtree-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/webp" imagesrcset="img/hero-800.webp 800w, img/hero-1200.webp 1200w, img/hero-1600.webp 1600w, img/hero-2721.webp 2721w" imagesizes="(max-aspect-ratio: 1/1) 108svh, 100vw">
+<style>
+@font-face{font-family:"Figtree";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/figtree-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Figtree";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/figtree-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--g:#026501;--g2:#014B01;--gd:#012E01;--lime:#7DC242;--ink:#141A14;--mut:#4A544A;--sz:#F1F4F1;--line:#DCE3DC;--r:0 28px 0 28px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:17px/1.6 "Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{line-height:1.12;margin:0;font-weight:800;letter-spacing:-.015em}
+h2{font-size:clamp(30px,4.2vw,50px);color:var(--gd)}
+h3{font-size:21px;font-weight:700}
+p{margin:0 0 1em}
+.w{width:min(1240px,100% - 40px);margin:0 auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:var(--r);font-weight:700;font-size:17px;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s;cursor:pointer;font-family:inherit}
+.btn-g{background:var(--lime);color:var(--gd)}
+.btn-g:hover{background:#93D35A}
+.btn-o{border-color:rgba(255,255,255,.75);color:#fff}
+.btn-o:hover{background:#fff;color:var(--gd)}
+.btn-d{background:var(--g);color:#fff}
+.btn-d:hover{background:var(--g2)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* naglowek */
+.top{position:absolute;inset:0 0 auto;z-index:20;color:#fff}
+.top .w{display:flex;align-items:center;justify-content:space-between;gap:20px;height:84px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.logo svg{width:58px;height:30px;flex:none}
+.logo b{display:block;font-size:26px;font-weight:800;letter-spacing:-.02em;line-height:1}
+.logo small{display:block;font-size:12.5px;opacity:.85;line-height:1.3;margin-top:3px}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{text-decoration:none;font-weight:600;font-size:16px}
+.nav a:not(.btn):hover{color:var(--lime)}
+.nav .btn{min-height:44px;padding:0 18px;font-size:16px}
+.burger{display:none;background:none;border:0;color:#fff;width:48px;height:48px;padding:12px;cursor:pointer}
+.burger span{display:block;height:2px;background:currentColor;margin:6px 0;border-radius:2px}
+
+/* pierwszy ekran */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;color:#fff;overflow:hidden;background:var(--gd)}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 50%}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(1,38,1,.93) 0%,rgba(1,46,1,.84) 42%,rgba(1,46,1,.3) 68%,rgba(1,46,1,0) 84%)}
+.hero .w{position:relative;z-index:2;padding:110px 0 64px}
+.hero-txt{max-width:800px}
+.hero h1{font-size:clamp(36px,4.4vw,66px);margin-bottom:22px}
+.hero p{font-size:clamp(17px,1.5vw,20px);max-width:540px;opacity:.94;margin-bottom:32px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px}
+.vein{position:absolute;z-index:1;left:0;bottom:-2px;width:100%;height:auto;pointer-events:none}
+
+/* od rysunku do ogrodu */
+.sec{padding:clamp(64px,8vw,120px) 0}
+.szary{background:var(--sz)}
+.etapy{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(36px,6vw,90px);align-items:center}
+.etapy .lead{font-size:19px;color:var(--mut);margin:20px 0 30px}
+.kroki{list-style:none;margin:0;padding:0 0 0 34px;position:relative}
+.kroki:before{content:"";position:absolute;left:9px;top:10px;bottom:16px;width:2px;background:linear-gradient(var(--g),var(--lime))}
+.kroki li{position:relative;padding:0 0 20px}
+.kroki li:last-child{padding:0}
+.kroki li svg{position:absolute;left:-34px;top:3px;width:20px;height:20px;background:var(--sz)}
+.kroki b{display:block;font-size:18px;color:var(--gd)}
+.kroki span{color:var(--mut);font-size:16px}
+.para{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:end}
+.para figure{margin:0}
+.para img{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:var(--r)}
+.para figure:first-child{transform:translateY(-36px)}
+.para figcaption{font-size:14px;color:var(--mut);margin-top:10px}
+
+/* oferta */
+.glowa{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:36px}
+.glowa p{max-width:520px;color:var(--mut);margin:14px 0 0}
+.strz{display:flex;gap:10px;flex:none}
+.strz button{width:52px;height:52px;border-radius:var(--r);border:2px solid var(--g);background:#fff;color:var(--g);cursor:pointer;display:grid;place-items:center}
+.strz button:hover{background:var(--g);color:#fff}
+.strz svg{width:20px;height:20px}
+.tor{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 20px 8px;margin:0 -20px;cursor:grab;overscroll-behavior-x:contain;scroll-padding-inline:20px}
+.tor::-webkit-scrollbar{display:none}
+.tor.ciag{cursor:grabbing;scroll-snap-type:none}
+.tor.ciag *{pointer-events:none}
+.karta{flex:0 0 clamp(272px,29%,380px);scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.karta img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.karta div{padding:20px 22px 24px}
+.karta h3{color:var(--gd);margin-bottom:8px}
+.karta p{font-size:15.5px;color:var(--mut);margin:0}
+
+/* realizacje */
+.ciemna{background:var(--gd);color:#fff}
+.ciemna h2{color:#fff}
+.ciemna .glowa p{color:rgba(255,255,255,.78)}
+.ciemna .strz button{background:transparent;border-color:var(--lime);color:var(--lime)}
+.ciemna .strz button:hover{background:var(--lime);color:var(--gd)}
+.foto{flex:0 0 clamp(280px,40%,560px);scroll-snap-align:start;margin:0;border:0;padding:0;background:none;color:#fff;text-align:left;cursor:zoom-in;font:inherit}
+.foto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.foto span{display:block;font-size:15px;margin-top:10px;opacity:.85}
+
+/* o firmie */
+.firma{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(36px,6vw,90px);align-items:center}
+.firma img{width:100%;aspect-ratio:1000/630;object-fit:cover;border-radius:var(--r)}
+.firma .txt p{color:var(--mut)}
+.firma h2{margin-bottom:22px}
+.obszar{margin-top:26px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 28px;font-weight:600;color:var(--gd)}
+.obszar span{display:inline-flex;align-items:center;gap:8px}
+.obszar svg{width:16px;height:16px}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(36px,5vw,72px)}
+.dane{list-style:none;padding:0;margin:26px 0 0}
+.dane li{padding:16px 0;border-top:1px solid var(--line)}
+.dane small{display:block;color:var(--mut);font-size:14px}
+.dane a,.dane strong{font-size:20px;font-weight:700;color:var(--gd);text-decoration:none}
+.dane a:hover{color:var(--g)}
+form{background:#fff;padding:clamp(22px,3vw,36px);border-radius:var(--r);border:1px solid var(--line)}
+label{display:block;font-weight:600;font-size:15px;margin-bottom:14px}
+input,textarea,select{display:block;width:100%;margin-top:6px;font:inherit;font-size:16px;padding:13px 14px;border:1px solid #C5CFC5;border-radius:0 12px 0 12px;background:#fff;color:var(--ink)}
+input:focus,textarea:focus,select:focus{outline:2px solid var(--g);outline-offset:1px;border-color:var(--g)}
+textarea{min-height:120px;resize:vertical}
+.dwa{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+.uwaga{font-size:13.5px;color:var(--mut);margin:12px 0 0}
+.mapa{margin-top:26px;aspect-ratio:16/9;background:#DDE5DD;border-radius:var(--r);overflow:hidden}
+.mapa iframe{width:100%;height:100%;border:0}
+
+/* stopka */
+.stopka{background:#0B1A0B;color:#B9C4B9;padding:44px 0 30px;font-size:15px}
+.stopka .w{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:26px}
+.stopka b{color:#fff}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:#fff}
+.stopka p{margin:0 0 6px}
+.dol{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;border-top:1px solid #1F331F;padding-top:20px;margin-top:6px;font-size:14px}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+/* podglad zdjec */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(5,15,5,.94);display:none;align-items:center;justify-content:center;padding:20px}
+.lb.on{display:flex}
+.lb img{max-width:min(1200px,100%);max-height:84vh;width:auto;border-radius:6px}
+.lb p{position:absolute;left:0;right:0;bottom:18px;text-align:center;color:#fff;margin:0}
+.lb button{position:absolute;background:none;border:0;color:#fff;cursor:pointer;width:56px;height:56px;display:grid;place-items:center}
+.lb button svg{width:28px;height:28px}
+.lb .x{top:10px;right:10px}.lb .p{left:6px;top:50%;margin-top:-28px}.lb .n{right:6px;top:50%;margin-top:-28px}
+
+@media (max-width:980px){
+ .nav{position:fixed;inset:0;background:var(--gd);flex-direction:column;justify-content:center;gap:26px;font-size:22px;transform:translateX(100%);transition:transform .3s;z-index:30}
+ .nav a{font-size:24px}
+ .nav.on{transform:none}
+ .burger{display:block;position:relative;z-index:31}
+ .etapy,.firma,.kontakt{grid-template-columns:1fr}
+ .stopka .w{grid-template-columns:1fr 1fr}
+ .stopka .w>div:first-child{grid-column:1/-1}
+}
+@media (max-width:700px){
+ body{font-size:16px}
+ .w{width:calc(100% - 32px)}
+ .top .w{height:68px}
+ .logo svg{width:46px;height:24px}
+ .logo b{font-size:22px}
+ .logo small{font-size:11px}
+ .hero{align-items:flex-end}
+ .hero:after{background:linear-gradient(0deg,rgba(1,38,1,.96) 0%,rgba(1,40,1,.88) 46%,rgba(1,46,1,.35) 76%,rgba(1,46,1,.15) 100%)}
+ .hero picture img{object-position:70% 30%}
+ .hero .w{padding:96px 0 34px}
+ .hero h1{font-size:clamp(31px,8.6vw,40px);margin-bottom:14px}
+ .hero p{font-size:16px;margin-bottom:24px}
+ .hero .cta{flex-direction:column;gap:10px}
+ .hero .btn{width:100%}
+ .glowa{display:block}
+ .strz{display:none}
+ .tor{padding:4px 16px 8px;margin:0 -16px;gap:14px;scroll-padding-inline:16px}
+ .karta{flex-basis:82%}
+ .foto{flex-basis:86%}
+ .para figure:first-child{transform:none}
+ .dwa{grid-template-columns:1fr}
+}
+@media (max-width:700px) and (max-height:700px){
+ .hero .w{padding:84px 0 22px}
+ .hero h1{font-size:29px;margin-bottom:10px}
+ .hero p{font-size:15px;line-height:1.5;margin-bottom:24px}
+ .hero .btn{min-height:48px}
+}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="w">
+  <a class="logo" href="#" aria-label="Flortech - strona główna">
+   <svg viewBox="0 0 116 60" aria-hidden="true"><path fill="currentColor" d="M4 52C16 30 40 12 66 11c11-.4 20 5 20 15 0 13-15 24-37 27-15 2-30 1-45-1z"/><path fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" d="M84 22c9-5 16-11 22-18"/><path fill="none" stroke="#7DC242" stroke-width="4" stroke-linecap="round" d="M26 45c12-14 27-22 47-22"/></svg>
+   <span><b>Flortech</b><small>Zakład Kształtowania Krajobrazu</small></span>
+  </a>
+  <nav class="nav" id="nav">
+   <a href="#oferta">Oferta</a>
+   <a href="#realizacje">Realizacje</a>
+   <a href="#firma">O&nbsp;firmie</a>
+   <a href="#kontakt">Kontakt</a>
+   <a class="btn btn-g" href="tel:+48605665363"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>605 665 363</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <picture>
+  <img src="img/hero-1600.webp" srcset="img/hero-800.webp 800w, img/hero-1200.webp 1200w, img/hero-1600.webp 1600w, img/hero-2721.webp 2721w" sizes="(max-aspect-ratio: 1/1) 108svh, 100vw" width="2721" height="2529" alt="Kolorowy projekt ogrodu z oczkiem wodnym, tarasem i nasadzeniami" fetchpriority="high">
+ </picture>
+ <div class="w">
+  <div class="hero-txt">
+   <h1>Projektowanie i&nbsp;zakładanie ogrodów - od&nbsp;rysunku do&nbsp;gotowego ogrodu</h1>
+   <p>Flortech z&nbsp;Woli Rzędzińskiej robi cały ogród w&nbsp;jednych rękach: projekt, prace ziemne, instalacje, tarasy, wodę, rośliny i&nbsp;późniejszą pielęgnację. Od 1999 roku.</p>
+   <div class="cta">
+    <a class="btn btn-g" href="#kontakt">Zapytaj o&nbsp;projekt ogrodu</a>
+    <a class="btn btn-o" href="tel:+48605665363"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>605 665 363</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec szary" id="etapy">
+ <div class="w etapy">
+  <div>
+   <h2>Jedna firma zamiast kilku ekip</h2>
+   <p class="lead">Nie trzeba szukać osobno projektanta, koparki, instalatora i&nbsp;ogrodnika. Prowadzimy ogród od pierwszej rozmowy na działce do ostatniego koszenia.</p>
+   <ol class="kroki">
+    <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#026501" d="M2 17C5 9 10 4 16 3.5c1.5 0 2.5 1 2.3 2.6C17.8 11 12 16 2 17z"/><path fill="none" stroke="#7DC242" stroke-width="1.6" stroke-linecap="round" d="M5.5 14.5c3-3.6 6.2-6 10-7"/></svg><b>Projekt i&nbsp;wizualizacja 3D</b><span>Przyjeżdżamy na działkę, mierzymy, sprawdzamy glebę i&nbsp;nasłonecznienie, pokazujemy ogród w&nbsp;wirtualnym spacerze.</span></li>
+    <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#026501" d="M2 17C5 9 10 4 16 3.5c1.5 0 2.5 1 2.3 2.6C17.8 11 12 16 2 17z"/><path fill="none" stroke="#7DC242" stroke-width="1.6" stroke-linecap="round" d="M5.5 14.5c3-3.6 6.2-6 10-7"/></svg><b>Prace ziemne i&nbsp;instalacje</b><span>Niwelacja terenu, skarpy, wymiana gruntu, drenaże, nawadnianie i&nbsp;oświetlenie.</span></li>
+    <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#026501" d="M2 17C5 9 10 4 16 3.5c1.5 0 2.5 1 2.3 2.6C17.8 11 12 16 2 17z"/><path fill="none" stroke="#7DC242" stroke-width="1.6" stroke-linecap="round" d="M5.5 14.5c3-3.6 6.2-6 10-7"/></svg><b>Tarasy, mała architektura i&nbsp;woda</b><span>Mury oporowe, gabiony, ścieżki, altany, pergole, tarasy, oczka wodne i&nbsp;fontanny.</span></li>
+    <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#026501" d="M2 17C5 9 10 4 16 3.5c1.5 0 2.5 1 2.3 2.6C17.8 11 12 16 2 17z"/><path fill="none" stroke="#7DC242" stroke-width="1.6" stroke-linecap="round" d="M5.5 14.5c3-3.6 6.2-6 10-7"/></svg><b>Rośliny i&nbsp;trawnik</b><span>Rośliny z&nbsp;dobrych szkółek, dobrane do gleby i&nbsp;światła. Trawnik z&nbsp;rolki albo z&nbsp;siewu.</span></li>
+    <li><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#026501" d="M2 17C5 9 10 4 16 3.5c1.5 0 2.5 1 2.3 2.6C17.8 11 12 16 2 17z"/><path fill="none" stroke="#7DC242" stroke-width="1.6" stroke-linecap="round" d="M5.5 14.5c3-3.6 6.2-6 10-7"/></svg><b>Pielęgnacja przez cały rok</b><span>Cięcia, koszenie, wertykulacja, ochrona roślin, przeglądy nawadniania.</span></li>
+   </ol>
+  </div>
+  <div class="para">
+   <figure><img src="img/oczko-600.webp" srcset="img/oczko-600.webp 600w, img/oczko-800.webp 800w" sizes="(max-width:980px) 46vw, 290px" width="800" height="1200" loading="lazy" alt="Oczko wodne z kamieniami i roślinami"><figcaption>Woda w&nbsp;ogrodzie</figcaption></figure>
+   <figure><img src="img/kwiaty-600.webp" srcset="img/kwiaty-600.webp 600w, img/kwiaty-800.webp 800w" sizes="(max-width:980px) 46vw, 290px" width="800" height="1200" loading="lazy" alt="Kwitnące rabaty i trawnik w ogrodzie"><figcaption>Rabaty i&nbsp;trawnik</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="oferta">
+ <div class="w">
+  <div class="glowa">
+   <div><h2>Co robimy w&nbsp;ogrodzie</h2><p>Jedenaście zakresów prac, które można zamówić razem albo osobno.</p></div>
+   <div class="strz" data-tor="t1"><button type="button" aria-label="Poprzednie"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></svg></button><button type="button" aria-label="Następne"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></button></div>
+  </div>
+  <div class="tor" id="t1">
+   <article class="karta"><img src="img/s-projekt-600.webp" srcset="img/s-projekt-600.webp 600w, img/s-projekt-1000.webp 1000w" sizes="(max-width:700px) 82vw, 380px" width="600" height="378" loading="lazy" alt="Projektowanie i zakładanie ogrodów"><div><h3>Projektowanie i&nbsp;zakładanie ogrodów</h3><p>Wywiad na działce, pomiary, projekt z&nbsp;wizualizacją 3D i&nbsp;wykonanie całości.</p></div></article>
+   <article class="karta"><img src="img/s-ziemne-600.webp" srcset="img/s-ziemne-600.webp 600w, img/s-ziemne-1000.webp 1000w" sizes="(max-width:700px) 82vw, 380px" width="600" height="378" loading="lazy" alt="Prace ziemne"><div><h3>Prace ziemne</h3><p>Niwelacje, wykopy, wymiana gruntu, stabilizacja skarp, usługi mini-ładowarką.</p></div></article>
+   <article class="karta"><img src="img/s-budowle-600.webp" srcset="img/s-budowle-600.webp 600w, img/s-budowle-1000.webp 1000w" sizes="(max-width:700px) 82vw, 380px" width="600" height="377" loading="lazy" alt="Budowle i mała architektura"><div><h3>Budowle i&nbsp;mała architektura</h3><p>Mury oporowe, gabiony, ogrodzenia, ścieżki, podjazdy, altany, grille, pergole.</p></div></article>
+   <article class="karta"><img src="img/s-instalacje-600.webp" srcset="img/s-instalacje-600.webp 600w, img/s-instalacje-1000.webp 1000w" sizes="(max-width:700px) 82vw, 380px" width="600" height="377" loading="lazy" alt="Instalacje"><div><h3>Instalacje</h3><p>Odwodnienia, melioracja, zbiorniki na deszczówkę, nawadnianie i&nbsp;oświetlenie ogrodu.</p></div></article>
+   <article class="karta"><img src="img/s-tarasy-600.webp" srcset="img/s-tarasy-600.webp 600w, img/s-tarasy-1000.webp 1000w" sizes="(max-width:700px) 82vw, 380px" width="600" height="558" loading="lazy" alt="Tarasy"><div><h3>Tarasy</h3><p>Kompozyt, drewno egzotyczne, kamień i&nbsp;beton architektoniczny, z&nbsp;izolacją i&nbsp;odwodnieniem.</p></div></article>
+   <article class="karta"><img src="img/s-woda-600.webp" srcset="img/s-woda-600.webp 600w, img/s-woda-1000.webp 1000w" sizes="(max-width:700px) 82vw, 380px" width="600" height="450" loading="lazy" alt="Woda w ogrodzie"><div><h3>Woda w&nbsp;ogrodzie</h3><p>Oczka wodne, kaskady, fontanny i&nbsp;stawy.</p></div></article>
+   <article class="karta"><img src="img/s-zielen-600.webp" srcset="img/s-zielen-600.webp 600w, img/s-zielen-1000.webp 1000w" sizes="(max-width:700px) 82vw, 380px" width="600" height="378" loading="lazy" alt="Aranżacje zieleni i rewitalizacja"><div><h3>Aranżacje zieleni i&nbsp;rewitalizacja</h3><p>Drzewa, krzewy, byliny, ogrody ziołowe i&nbsp;warzywne, trawniki, odnawianie starych ogrodów.</p></div></article>
+   <article class="karta"><img src="img/s-pielegnacja-600.webp" srcset="img/s-pielegnacja-600.webp 600w, img/s-pielegnacja-1000.webp 1000w" sizes="(max-width:700px) 82vw, 380px" width="600" height="377" loading="lazy" alt="Pielęgnacja"><div><h3>Pielęgnacja</h3><p>Cięcia drzew i&nbsp;krzewów, koszenie, wertykulacja, aeracja, nawożenie, zabezpieczenie na zimę.</p></div></article>
+   <article class="karta"><img src="img/s-specjalistyczne-600.webp" srcset="img/s-specjalistyczne-600.webp 600w, img/s-specjalistyczne-1000.webp 1000w" sizes="(max-width:700px) 82vw, 380px" width="600" height="450" loading="lazy" alt="Usługi specjalistyczne"><div><h3>Usługi specjalistyczne</h3><p>Przesadzanie dużych drzew, cięcie wysokich żywopłotów, frezowanie pni, odkamienianie terenu.</p></div></article>
+   <article class="karta"><img src="img/s-ochrona-600.webp" srcset="img/s-ochrona-600.webp 600w, img/s-ochrona-1000.webp 1000w" sizes="(max-width:700px) 82vw, 380px" width="600" height="450" loading="lazy" alt="Ochrona roślin"><div><h3>Ochrona roślin</h3><p>Rozpoznanie chorób i&nbsp;szkodników, opryski, także biologiczne i&nbsp;ekologiczne metody.</p></div></article>
+   <article class="karta"><img src="img/s-porzadkowe-600.webp" srcset="img/s-porzadkowe-600.webp 600w, img/s-porzadkowe-1000.webp 1000w" sizes="(max-width:700px) 82vw, 380px" width="600" height="558" loading="lazy" alt="Prace porządkowe"><div><h3>Prace porządkowe</h3><p>Mycie tarasów, kostki, dachów i&nbsp;elewacji, wywóz gruzu i&nbsp;odpadów zielonych, odśnieżanie.</p></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="sec ciemna" id="realizacje">
+ <div class="w">
+  <div class="glowa">
+   <div><h2>Nasze realizacje</h2><p>Ogrody, tarasy, schody i&nbsp;fontanny zrobione przez naszą ekipę. Kliknij zdjęcie, żeby je powiększyć.</p></div>
+   <div class="strz" data-tor="t2"><button type="button" aria-label="Poprzednie"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></svg></button><button type="button" aria-label="Następne"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></button></div>
+  </div>
+  <div class="tor" id="t2">
+   <button class="foto" type="button" data-big="img/r1-1000.webp"><img src="img/r1-600.webp" srcset="img/r1-600.webp 600w, img/r1-1000.webp 1000w" sizes="(max-width:700px) 86vw, 560px" width="600" height="377" loading="lazy" alt="Ogród geometryczny"><span>Ogród geometryczny</span></button>
+   <button class="foto" type="button" data-big="img/r5-1000.webp"><img src="img/r5-600.webp" srcset="img/r5-600.webp 600w, img/r5-1000.webp 1000w" sizes="(max-width:700px) 86vw, 560px" width="600" height="378" loading="lazy" alt="Ogród nowoczesny"><span>Ogród nowoczesny</span></button>
+   <button class="foto" type="button" data-big="img/r2-1000.webp"><img src="img/r2-600.webp" srcset="img/r2-600.webp 600w, img/r2-1000.webp 1000w" sizes="(max-width:700px) 86vw, 560px" width="600" height="450" loading="lazy" alt="Ogród naturalistyczny"><span>Ogród naturalistyczny</span></button>
+   <button class="foto" type="button" data-big="img/r11-1000.webp"><img src="img/r11-600.webp" srcset="img/r11-600.webp 600w, img/r11-1000.webp 1000w" sizes="(max-width:700px) 86vw, 560px" width="600" height="378" loading="lazy" alt="Taras drewniany"><span>Taras drewniany</span></button>
+   <button class="foto" type="button" data-big="img/r13-1000.webp"><img src="img/r13-600.webp" srcset="img/r13-600.webp 600w, img/r13-1000.webp 1000w" sizes="(max-width:700px) 86vw, 560px" width="600" height="450" loading="lazy" alt="Fontanna skalna"><span>Fontanna skalna</span></button>
+   <button class="foto" type="button" data-big="img/r3-1000.webp"><img src="img/r3-600.webp" srcset="img/r3-600.webp 600w, img/r3-1000.webp 1000w" sizes="(max-width:700px) 86vw, 560px" width="600" height="450" loading="lazy" alt="Rabaty bylinowe"><span>Rabaty bylinowe</span></button>
+   <button class="foto" type="button" data-big="img/r12-1000.webp"><img src="img/r12-600.webp" srcset="img/r12-600.webp 600w, img/r12-1000.webp 1000w" sizes="(max-width:700px) 86vw, 560px" width="600" height="392" loading="lazy" alt="Schody kamienne"><span>Schody kamienne</span></button>
+   <button class="foto" type="button" data-big="img/r7-1000.webp"><img src="img/r7-600.webp" srcset="img/r7-600.webp 600w, img/r7-1000.webp 1000w" sizes="(max-width:700px) 86vw, 560px" width="600" height="377" loading="lazy" alt="Ogród swobodny"><span>Ogród swobodny</span></button>
+   <button class="foto" type="button" data-big="img/r10-1000.webp"><img src="img/r10-600.webp" srcset="img/r10-600.webp 600w, img/r10-1000.webp 1000w" sizes="(max-width:700px) 86vw, 560px" width="600" height="450" loading="lazy" alt="Taras drewniano-kamienny"><span>Taras drewniano-kamienny</span></button>
+   <button class="foto" type="button" data-big="img/r4-1000.webp"><img src="img/r4-600.webp" srcset="img/r4-600.webp 600w, img/r4-1000.webp 1000w" sizes="(max-width:700px) 86vw, 560px" width="600" height="378" loading="lazy" alt="Ścieżka w ogrodzie naturalistycznym"><span>Ścieżka w&nbsp;ogrodzie naturalistycznym</span></button>
+   <button class="foto" type="button" data-big="img/r8-1000.webp"><img src="img/r8-600.webp" srcset="img/r8-600.webp 600w, img/r8-1000.webp 1000w" sizes="(max-width:700px) 86vw, 560px" width="600" height="376" loading="lazy" alt="Chodnik rzymski"><span>Chodnik rzymski</span></button>
+   <button class="foto" type="button" data-big="img/r6-1000.webp"><img src="img/r6-600.webp" srcset="img/r6-600.webp 600w, img/r6-1000.webp 1000w" sizes="(max-width:700px) 86vw, 560px" width="600" height="379" loading="lazy" alt="Ogród nowoczesny przy schodach"><span>Ogród nowoczesny przy schodach</span></button>
+   <button class="foto" type="button" data-big="img/r9-1000.webp"><img src="img/r9-600.webp" srcset="img/r9-600.webp 600w, img/r9-1000.webp 1000w" sizes="(max-width:700px) 86vw, 560px" width="600" height="377" loading="lazy" alt="Nawierzchnia granitowa"><span>Nawierzchnia granitowa</span></button>
+   <button class="foto" type="button" data-big="img/r16-1000.webp"><img src="img/r16-600.webp" srcset="img/r16-600.webp 600w, img/r16-1000.webp 1000w" sizes="(max-width:700px) 86vw, 560px" width="600" height="450" loading="lazy" alt="Taras kompozytowy"><span>Taras kompozytowy</span></button>
+   <button class="foto" type="button" data-big="img/r15-1000.webp"><img src="img/r15-600.webp" srcset="img/r15-600.webp 600w, img/r15-1000.webp 1000w" sizes="(max-width:700px) 86vw, 560px" width="600" height="377" loading="lazy" alt="Ogród geometryczny z warzywnikiem"><span>Ogród geometryczny z&nbsp;warzywnikiem</span></button>
+   <button class="foto" type="button" data-big="img/r14-1000.webp"><img src="img/r14-600.webp" srcset="img/r14-600.webp 600w, img/r14-1000.webp 1000w" sizes="(max-width:700px) 86vw, 560px" width="600" height="338" loading="lazy" alt="Wizualizacja 3D projektu, widok z lotu ptaka"><span>Wizualizacja 3D projektu, widok z&nbsp;lotu ptaka</span></button>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="firma">
+ <div class="w firma">
+  <img src="img/s-zielen-1000.webp" srcset="img/s-zielen-600.webp 600w, img/s-zielen-1000.webp 1000w" sizes="(max-width:980px) 92vw, 640px" width="1000" height="630" loading="lazy" alt="Ogród naturalistyczny z drzewami i bylinami">
+  <div class="txt">
+   <h2>Ogrody z&nbsp;wykształceniem i&nbsp;własnym sprzętem</h2>
+   <p>Flortech Zakład Kształtowania Krajobrazu działa od 1999 roku. Mamy kierunkowe wykształcenie i&nbsp;doświadczenie zarówno ogrodnicze, jak i&nbsp;budowlane, dlatego bierzemy też trudne działki: skarpy, podmokły teren, wymianę gruntu pod dom.</p>
+   <p>Pracujemy rozbudowanym parkiem maszyn, regularnie jeździmy na szkolenia i&nbsp;branżowe wystawy. W&nbsp;projekcie nie chodzi nam o&nbsp;idealny rysunek, tylko o&nbsp;najlepsze rozwiązanie dla konkretnej rodziny i&nbsp;działki.</p>
+   <div class="obszar"><span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#026501" d="M2 17C5 9 10 4 16 3.5c1.5 0 2.5 1 2.3 2.6C17.8 11 12 16 2 17z"/><path fill="none" stroke="#7DC242" stroke-width="1.6" stroke-linecap="round" d="M5.5 14.5c3-3.6 6.2-6 10-7"/></svg>Małopolska</span><span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#026501" d="M2 17C5 9 10 4 16 3.5c1.5 0 2.5 1 2.3 2.6C17.8 11 12 16 2 17z"/><path fill="none" stroke="#7DC242" stroke-width="1.6" stroke-linecap="round" d="M5.5 14.5c3-3.6 6.2-6 10-7"/></svg>Podkarpacie</span><span><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#026501" d="M2 17C5 9 10 4 16 3.5c1.5 0 2.5 1 2.3 2.6C17.8 11 12 16 2 17z"/><path fill="none" stroke="#7DC242" stroke-width="1.6" stroke-linecap="round" d="M5.5 14.5c3-3.6 6.2-6 10-7"/></svg>Śląsk</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec szary" id="kontakt">
+ <div class="w kontakt">
+  <div>
+   <h2>Porozmawiajmy o&nbsp;Twoim ogrodzie</h2>
+   <ul class="dane">
+    <li><small>Telefon</small><a href="tel:+48605665363">+48 605 665 363</a></li>
+    <li><small>E-mail</small><a href="mailto:flortech.ogrody@gmail.com">flortech.ogrody@gmail.com</a></li>
+    <li><small>Adres</small><strong>Wola Rzędzińska 521A, 33-150 Wola Rzędzińska</strong></li>
+   </ul>
+   <div class="mapa" id="mapa" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7461.774674848785!2d21.051234516295434!3d50.029474647678484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d9dabffffffff%3A0x6eb0686fa2998c5c!2sFlortech%20Zak%C5%82ad%20Kszta%C5%82towania%20Krajobrazu!5e0!3m2!1spl!2spl!4v1609187956876!5m2!1spl!2spl"></div>
+  </div>
+  <form id="form">
+   <div class="dwa">
+    <label>Imię i&nbsp;nazwisko<input name="n" autocomplete="name" required></label>
+    <label>Telefon<input name="t" type="tel" autocomplete="tel" required></label>
+   </div>
+   <label>Miejscowość działki<input name="m"></label>
+   <label>Czego potrzebujesz?
+    <select name="z"><option>Projekt i&nbsp;założenie ogrodu</option><option>Prace ziemne</option><option>Taras lub mała architektura</option><option>Nawadnianie lub oświetlenie</option><option>Oczko wodne</option><option>Pielęgnacja ogrodu</option><option>Inne</option></select>
+   </label>
+   <label>Kilka słów o&nbsp;działce<textarea name="o" placeholder="Np. powierzchnia, czy dom już stoi, co jest na działce"></textarea></label>
+   <button class="btn btn-d" type="submit">Wyślij zapytanie</button>
+   <p class="uwaga" id="info">Formularz w&nbsp;podglądzie nie wysyła wiadomości.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <div class="w">
+  <div><p><b>Flortech Zakład Kształtowania Krajobrazu</b></p><p>Wola Rzędzińska 521A, 33-150 Wola Rzędzińska</p><p>Małopolska, Podkarpacie, Śląsk</p></div>
+  <div><p><a href="tel:+48605665363">+48 605 665 363</a></p><p><a href="mailto:flortech.ogrody@gmail.com">flortech.ogrody@gmail.com</a></p></div>
+  <div><p><a href="#oferta">Oferta</a></p><p><a href="#realizacje">Realizacje</a></p><p><a href="#kontakt">Kontakt</a></p></div>
+  <div class="dol"><span>© 2026 Flortech</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=flortech-ogrody.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+ </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+ <img id="lbi" alt="">
+ <p id="lbp"></p>
+ <button class="x" type="button" aria-label="Zamknij"><svg viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M5 5l14 14M19 5L5 19"/></svg></button>
+ <button class="p" type="button" aria-label="Poprzednie"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></svg></button>
+ <button class="n" type="button" aria-label="Następne"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></button>
+</div>
+
+<script>
+(function(){
+var b=document.getElementById('burger'),n=document.getElementById('nav');
+b.onclick=function(){var o=n.classList.toggle('on');b.setAttribute('aria-expanded',o)};
+n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('on');b.setAttribute('aria-expanded',false)})});
+document.querySelectorAll('.strz').forEach(function(s){var t=document.getElementById(s.dataset.tor),bt=s.querySelectorAll('button');
+ function k(){var c=t.querySelector(':scope>*');return c?c.getBoundingClientRect().width+20:300}
+ bt[0].onclick=function(){t.scrollBy({left:-k(),behavior:'smooth'})};bt[1].onclick=function(){t.scrollBy({left:k(),behavior:'smooth'})}});
+document.querySelectorAll('.tor').forEach(function(t){var d=false,x0,s0,ruch=0;
+ t.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;d=true;ruch=0;x0=e.clientX;s0=t.scrollLeft});
+ window.addEventListener('pointermove',function(e){if(!d)return;var dx=e.clientX-x0;ruch=Math.max(ruch,Math.abs(dx));if(ruch>5)t.classList.add('ciag');t.scrollLeft=s0-dx});
+ window.addEventListener('pointerup',function(){if(!d)return;d=false;setTimeout(function(){t.classList.remove('ciag')},0)});
+ t.addEventListener('click',function(e){if(ruch>5){e.preventDefault();e.stopPropagation();ruch=0}},true)});
+var f=[].slice.call(document.querySelectorAll('.foto')),lb=document.getElementById('lb'),li=document.getElementById('lbi'),lp=document.getElementById('lbp'),i=0;
+function pokaz(j){i=(j+f.length)%f.length;li.src=f[i].dataset.big;li.alt=f[i].querySelector('img').alt;lp.textContent=f[i].querySelector('span').textContent}
+f.forEach(function(el,j){el.addEventListener('click',function(){pokaz(j);lb.classList.add('on')})});
+lb.querySelector('.x').onclick=function(){lb.classList.remove('on')};
+lb.querySelector('.p').onclick=function(){pokaz(i-1)};lb.querySelector('.n').onclick=function(){pokaz(i+1)};
+lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('on')});
+document.addEventListener('keydown',function(e){if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')pokaz(i-1);if(e.key==='ArrowRight')pokaz(i+1)});
+var m=document.getElementById('mapa');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){if(en[0].isIntersecting){var fr=document.createElement('iframe');fr.src=m.dataset.src;fr.loading='lazy';fr.title='Mapa dojazdu do firmy Flortech';fr.referrerPolicy='no-referrer-when-downgrade';m.appendChild(fr);io.disconnect()}},{rootMargin:'300px'});io.observe(m)}
+document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('info').textContent='To podgląd strony: na docelowej stronie zapytanie trafi od razu na adres flortech.ogrody@gmail.com.'});
+})();
+</script>
+</body>
+</html>
